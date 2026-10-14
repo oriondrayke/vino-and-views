@@ -1,0 +1,52 @@
+{
+  "dependency-report": {
+    "url": "https://api.vinoandviews.online/donations/x402?amount_usd=1.00",
+    "method": "POST"
+  },
+  "claim-worth-it": {
+    "chain": "robinhood",
+    "wallet": "0x0000000000000000000000000000000000000001",
+    "platform": "pons"
+  },
+  "collectible-quote": {
+    "chain": "robinhood",
+    "wallet": "0x0000000000000000000000000000000000000001",
+    "platform": "pons"
+  },
+  "launchpad-fee-audit": {
+    "wallet": "0x0000000000000000000000000000000000000001"
+  },
+  "agent-budget-guard": {
+    "chain": "base",
+    "target": "0x0000000000000000000000000000000000000001",
+    "spend_usd": "1",
+    "max_spend_usd": "2"
+  },
+  "allowance-risk-check": {
+    "chain": "base",
+    "token": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "owner": "0x24F6A3F57549520cB3b2D1C691d2933Aecfa62EB",
+    "spender": "0x0000000000000000000000000000000000000001"
+  },
+  "tx-preflight": {
+    "chain": "base",
+    "sender": "0x0000000000000000000000000000000000000001",
+    "target": "0x0000000000000000000000000000000000000002",
+    "data": "0x",
+    "value_wei": 0
+  },
+  "x402-health-check": {
+    "url": "https://api.vinoandviews.online/donations/x402?amount_usd=1.00",
+    "method": "POST"
+  },
+  "launch-economics": {
+    "token": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+    "version": "legacy",
+    "expected_volume_eth": "1",
+    "launch_gas_cost_eth": "0.0001"
+  },
+  "wallet-snapshot": {
+    "chain": "base",
+    "wallet": "0x0000000000000000000000000000000000000001"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.oriondrayke/vino-and-views",
+  "description": "Free wallet/API reports, USDC payment links and capped escrow. Transfers need wallet signatures.",
+  "title": "Vino & Views",
+  "version": "0.7.1",
+  "websiteUrl": "https://vinoandviews.online",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.vinoandviews.online/mcp/"
+    }
+  ]
+}
