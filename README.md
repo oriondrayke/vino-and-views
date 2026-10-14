@@ -1,6 +1,6 @@
 # Vino & Views
 
-Free wallet and API reports, direct USDC payment links, and a small capped escrow pilot.
+Free wallet and API reports, EVM and Solana token payment links, and a small capped escrow pilot.
 
 [Try the tools](https://vinoandviews.online/?utm_source=github&utm_medium=organic&utm_campaign=public-launch) · [Create a payment request](https://vinoandviews.online/payments/?utm_source=github&utm_medium=organic&utm_campaign=public-launch) · [Explore escrow](https://vinoandviews.online/escrow/?utm_source=github&utm_medium=organic&utm_campaign=public-launch)
 
@@ -48,9 +48,9 @@ The MCP listing describes discovery and tool access. Payment and escrow transfer
 
 All nine report endpoints are free. See [request examples](examples/service-examples.json) for supported input shapes. Chain and platform support varies by tool; the payment networks below do not imply every report supports every network. A wallet snapshot is also available through the website. Optional donations support the service and do not unlock paid tiers.
 
-## Request USDC payments
+## Request token payments
 
-Create a payment link for native USDC on Base, Polygon, Arbitrum, or Ethereum, then share it with the payer. Vino & Views charges no service fee for direct payments; network gas still applies. Direct payment links have no escrow protection. Verify the network, recipient and amount before signing.
+Create a direct payment link for USDC on Base, Polygon, Arbitrum or Ethereum; USDT on Ethereum; or EURC on Ethereum and Base. [Solana payment links](https://vinoandviews.online/payments/solana.html) support original SPL USDC and EURC with Phantom, Solflare or Backpack. Share the link with the payer. Vino & Views charges no service fee for direct payments; network gas still applies. Direct payment links have no escrow protection. Verify the network, recipient and amount before signing.
 
 [Payment policy](https://vinoandviews.online/payments/policy.html)
 
@@ -64,8 +64,14 @@ Disputes use a 12-hour evidence window followed by a 12-hour judgement window. I
 
 Historical contracts retain their original on-chain fee terms and are retired for new agreements. Select a historical contract in the workspace to review an existing case. New zero-fee contracts are listed in [escrow-deployments.json](escrow-deployments.json); each has exact source and runtime verification on Sourcify. Source verification is not an independent security audit.
 
+## Cross-chain preparation and remaining gates
+
+[Cross-chain USDC](https://vinoandviews.online/payments/cross-chain.html) implements Circle CCTP Standard quote, burn verification, attestation and destination mint recovery. **New burns are disabled pending live acceptance.** Quotes are not transfers. Only a finalized destination mint is called delivered. Successful burns cannot be cancelled, and customers pay gas on both networks.
+
+Solana escrow is not deployed. Additional EVM direct-payment assets do not extend the USDC-only escrow contracts. Independent review and Solana deployment remain outstanding.
+
 ## Share useful feedback
 
 Open an issue with the tool name, network, expected result, and a redacted error. Do not post wallet keys, access tokens, private dispute evidence, or personal information. Public issues are suitable for integration feedback, not private dispute resolution.
 
-Published for the 0.7.2 release. Live terms and availability may change; check the website before transacting.
+Published for the 0.8.0 release. Live terms and availability may change; check the website before transacting.
