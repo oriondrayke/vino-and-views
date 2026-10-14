@@ -58,12 +58,14 @@ Create a payment link for native USDC on Base, Polygon, Arbitrum, or Ethereum, t
 
 The escrow workflow supports wallet login, agreement by both parties before funding, private text evidence, and wallet-signed settlement actions on Base, Polygon, Arbitrum and Ethereum.
 
-Current pilot limits: **1 USDC per case and 3 USDC outstanding per deployed contract**. The fee is **0.5% of the receiver award**, plus network gas. Contracts have **not been independently audited**. This is a limited pilot, not a high-value custody service.
+Current pilot limits: **1 USDC per case and 3 USDC outstanding per deployed contract**. **New agreements have no Vino service fee.** The receiver gets the full awarded amount; network gas is separate. Donations are optional. Contracts have **not been independently audited**. This is a limited pilot, not a high-value custody service.
 
 Disputes use a 12-hour evidence window followed by a 12-hour judgement window. If judgement is missed, a timeout transaction is required to return the full amount to the sender; funds do not move automatically. There is no committed 24/7 response SLA. Review the live terms and transaction preview before funding.
+
+Historical contracts retain their original on-chain fee terms and are retired for new agreements. Select a historical contract in the workspace to review an existing case. New zero-fee contracts are listed in [escrow-deployments.json](escrow-deployments.json); each has exact source and runtime verification on Sourcify. Source verification is not an independent security audit.
 
 ## Share useful feedback
 
 Open an issue with the tool name, network, expected result, and a redacted error. Do not post wallet keys, access tokens, private dispute evidence, or personal information. Public issues are suitable for integration feedback, not private dispute resolution.
 
-Published for the 0.7.1 release. Live terms and availability may change; check the website before transacting.
+Published for the 0.7.2 release. Live terms and availability may change; check the website before transacting.
