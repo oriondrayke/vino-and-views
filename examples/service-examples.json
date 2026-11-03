@@ -48,5 +48,44 @@
   "wallet-snapshot": {
     "chain": "base",
     "wallet": "0x0000000000000000000000000000000000000001"
+  },
+  "wallet-progress": {
+    "chain": "base",
+    "wallet": "0x0000000000000000000000000000000000000001"
+  },
+  "market-evidence-compare": {
+    "before": {
+      "asset_id": "example:collection",
+      "metric": "floor_ask",
+      "unit": "BNB",
+      "value": "0.000396",
+      "observed_at": "2026-11-01T00:00:00Z",
+      "source": "example-only"
+    },
+    "after": {
+      "asset_id": "example:collection",
+      "metric": "floor_ask",
+      "unit": "BNB",
+      "value": "0.00015",
+      "observed_at": "2026-11-02T00:00:00Z",
+      "source": "example-only"
+    }
+  },
+  "defi-scenario-review": {
+    "principal_usd": "100",
+    "apr_percent": "10",
+    "days": 30,
+    "entry_exit_fees_usd": "2"
+  },
+  "agent-job-brief": {
+    "service": "wallet_research",
+    "objective": "Review a public wallet and explain material changes.",
+    "deliverables": [
+      "Dated report with sources"
+    ],
+    "acceptance_checks": [
+      "Separate asks from completed sales"
+    ],
+    "budget_usd": "0"
   }
 }

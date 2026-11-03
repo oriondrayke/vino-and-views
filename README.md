@@ -45,8 +45,12 @@ The MCP listing describes discovery and tool access. Payment and escrow transfer
 | `launch-economics` | Launch economics under supplied assumptions |
 | `allowance-risk-check` | Token allowance evidence for an owner and spender |
 | `dependency-report` | Evidence about an API dependency |
+| `wallet-progress` | Live native/ERC-20 balances compared with a caller-held baseline |
+| `market-evidence-compare` | Arithmetic comparison of supplied prices, pools or other matching metrics |
+| `defi-scenario-review` | Simple-APR scenarios after supplied fees and losses |
+| `agent-job-brief` | A work brief with deliverables and acceptance checks; no job submission |
 
-All nine report endpoints are free. See [request examples](examples/service-examples.json) for supported input shapes. Chain and platform support varies by tool; the payment networks below do not imply every report supports every network. A wallet snapshot is also available through the website. Optional donations support the service and do not unlock paid tiers.
+All thirteen report endpoints are free. See [request examples](examples/service-examples.json) for supported input shapes. Chain and platform support varies by tool; the payment networks below do not imply every report supports every network. A wallet snapshot is also available through the website. Optional donations support the service and do not unlock paid tiers.
 
 ## Request token payments
 
@@ -74,4 +78,4 @@ Solana escrow is not deployed. Additional EVM direct-payment assets do not exten
 
 Open an issue with the tool name, network, expected result, and a redacted error. Do not post wallet keys, access tokens, private dispute evidence, or personal information. Public issues are suitable for integration feedback, not private dispute resolution.
 
-Published for the 0.8.0 release. Live terms and availability may change; check the website before transacting.
+Updated with four additional free reports on 3 November 2026. Market comparisons and DeFi scenarios use caller-supplied inputs; they do not independently verify funding or promise returns. Live terms and availability may change; check the website before transacting.
